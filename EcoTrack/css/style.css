@@ -1,0 +1,320 @@
+/* ============================
+   EcoTrack | Smart Waste Portal
+   Author: Sahil Kadam
+   ============================ */
+
+/* --- Global Reset --- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #f8fafc;
+  color: #1e293b;
+  line-height: 1.6;
+}
+
+/* --- Navbar --- */
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #ffffff;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  z-index: 100;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1100px;
+  margin: auto;
+  padding: 1rem 2rem;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #16a34a;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #1e293b;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.nav-links a:hover,
+.nav-links .active {
+  color: #16a34a;
+}
+
+/* --- Hero Section --- */
+.hero {
+  background: linear-gradient(rgba(22, 163, 74, 0.8), rgba(22, 163, 74, 0.8)),
+    url("../assets/images/awareness.jpg") center/cover no-repeat;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  padding: 0 1rem;
+}
+
+.hero-content {
+  max-width: 700px;
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.hero p {
+  font-size: 1.1rem;
+  margin-bottom: 2rem;
+}
+
+.btn-primary {
+  display: inline-block;
+  background-color: #ffffff;
+  color: #16a34a;
+  padding: 0.75rem 1.5rem;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+  background-color: #16a34a;
+  color: #ffffff;
+}
+
+/* --- Awareness Section --- */
+.awareness {
+  padding: 4rem 2rem;
+  text-align: center;
+  background-color: #ffffff;
+}
+
+.awareness h2 {
+  font-size: 2rem;
+  color: #16a34a;
+  margin-bottom: 0.5rem;
+}
+
+.awareness p {
+  color: #475569;
+  margin-bottom: 2.5rem;
+}
+
+.waste-types {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.card {
+  background-color: #f1f5f9;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  width: 280px;
+  padding: 1.5rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+.card img {
+  height: 100px;
+  margin-bottom: 1rem;
+}
+
+.card h3 {
+  color: #16a34a;
+  margin-bottom: 0.5rem;
+}
+
+/* --- Dashboard Section --- */
+.dashboard {
+  padding: 4rem 2rem;
+  background-color: #f0fdf4;
+  text-align: center;
+}
+
+.dashboard h2 {
+  color: #16a34a;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.chart-container {
+  max-width: 700px;
+  margin: 2rem auto;
+  background: #ffffff;
+  border-radius: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 1.5rem;
+}
+
+/* --- Footer --- */
+footer {
+  background-color: #16a34a;
+  color: white;
+  text-align: center;
+  padding: 1rem 0;
+  margin-top: 2rem;
+}
+
+/* --- Responsive Design --- */
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+  }
+
+  .hero h1 {
+    font-size: 1.8rem;
+  }
+
+  .waste-types {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+/* --- About Page --- */
+.about-page {
+  padding: 7rem 2rem 4rem;
+  background-color: #ffffff;
+  text-align: left;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.about-page h1 {
+  color: #16a34a;
+  font-size: 2.2rem;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.about-page h2 {
+  color: #16a34a;
+  margin-top: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.about-page p {
+  color: #475569;
+  margin-bottom: 1rem;
+  text-align: justify;
+}
+
+.waste-guide {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  margin-top: 1rem;
+}
+
+.guide-card {
+  flex: 1 1 250px;
+  background-color: #f0fdf4;
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+}
+
+.guide-card h3 {
+  color: #16a34a;
+  margin-bottom: 0.5rem;
+}
+
+/* --- Report Page --- */
+.report-page {
+  padding: 7rem 2rem 4rem;
+  background-color: #f8fafc;
+  min-height: 100vh;
+}
+
+.report-container {
+  max-width: 600px;
+  margin: auto;
+  background: #ffffff;
+  padding: 2rem;
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.report-container h1 {
+  text-align: center;
+  color: #16a34a;
+  margin-bottom: 1rem;
+}
+
+.report-container p {
+  text-align: center;
+  color: #475569;
+  margin-bottom: 2rem;
+}
+
+.report-container label {
+  display: block;
+  font-weight: 500;
+  color: #1e293b;
+  margin-bottom: 0.5rem;
+}
+
+.report-container input,
+.report-container textarea {
+  width: 100%;
+  padding: 0.75rem;
+  margin-bottom: 1rem;
+  border-radius: 8px;
+  border: 1px solid #cbd5e1;
+  font-size: 1rem;
+  outline: none;
+}
+
+.report-container input:focus,
+.report-container textarea:focus {
+  border-color: #16a34a;
+}
+
+.report-container button {
+  width: 100%;
+  border: none;
+  cursor: pointer;
+}
+
+.btn-icon {
+  width: 80px;
+  height: 80px;
+  vertical-align: middle;
+  margin-right: 8px;
+}
+
+.label-icon {
+  width: 18px;
+  height: 18px;
+  vertical-align: middle;
+  margin-right: 6px;
+}
