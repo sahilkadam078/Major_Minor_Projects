@@ -17,11 +17,11 @@ window.addEventListener("scroll", () => {
 
 // --- Awareness Tips Rotator ---
 const tips = [
-  "Reduce, Reuse, Recycle – start small, think big!",
-  "Composting kitchen waste reduces landfill pressure.",
-  "Segregate dry and wet waste daily.",
-  "Say no to single-use plastics!",
-  "Clean city, green future – let’s make it happen!"
+  "♻️ Reduce, Reuse, Recycle – start small, think big!",
+  "🌱 Composting kitchen waste reduces landfill pressure.",
+  "🚮 Segregate dry and wet waste daily.",
+  "🚫 Say no to single-use plastics!",
+  "🌍 Clean city, green future – let’s make it happen!",
 ];
 
 let tipIndex = 0;
