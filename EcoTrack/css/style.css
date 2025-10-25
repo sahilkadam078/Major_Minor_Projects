@@ -63,9 +63,11 @@ header {
 
 /* --- Hero Section --- */
 .hero {
-  background: linear-gradient(rgba(22, 163, 74, 0.8), rgba(22, 163, 74, 0.8)),
-    url("../assets/images/awareness.jpg") center/cover no-repeat;
-  height: 100vh;
+  /* background: linear-gradient(rgba(22, 163, 74, 0.8), rgba(22, 163, 74, 0.8)),
+    url("../assets/images/awareness.jpg") center/cover no-repeat; */
+  background: linear-gradient(rgba(22,163,74,0.7), rgba(56,189,248,0.7)),
+  url("../assets/images/awareness.jpg") center/cover no-repeat;
+  height: 76vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -177,7 +179,8 @@ header {
 
 /* --- Footer --- */
 footer {
-  background-color: #16a34a;
+  background: linear-gradient(90deg, #16a34a, #38bdf8);
+  /* background-color: #16a34a; */
   color: white;
   text-align: center;
   padding: 1rem 0;
