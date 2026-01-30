@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>EcoTrack | Create Report</title>
+  <link rel="stylesheet" href="./css/style.css" />
+
+</head>
+
+<body>
+
+  <header class="navbar">
+    <div class="logo">🌱 Eco<span>Track</span></div>
+  </header>
+
+  <section class="form-section">
+    <h2 class="form-title">Report a Waste Issue</h2>
+
+    <p class="form-subtitle">
+      Found uncollected garbage or overflowing bins in your area?
+      Help the city act faster by submitting a simple report below.
+    </p>
+
+    <form id="reportForm" class="form-box" enctype="multipart/form-data">
+
+      <label>Your Name</label>
+      <input type="text" placeholder="Enter your full name" required />
+
+      <label>Email Address</label>
+      <input type="email" placeholder="Enter your email" required />
+
+      <label>📍 Location</label>
+      <input type="text" id="location" placeholder="e.g. Near Ahmednagar Bus Stand" required />
+
+      <label>Issue Description</label>
+      <textarea id="description" placeholder="Describe the issue briefly..." required></textarea>
+
+      <label>Upload Photo (optional)</label>
+      <input type="file" id="image" />
+
+      <button type="submit" class="btn btn-primary">
+        Submit Report
+      </button>
+
+      <p id="result"></p>
+
+    </form>
+  </section>
+
+  <script src="js/report.js"></script>
+
+</body>
+
+</html>

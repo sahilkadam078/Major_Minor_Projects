@@ -1,0 +1,258 @@
+/* ================= RESET ================= */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Arial, sans-serif;
+}
+
+body {
+  background-color: #ffffff;
+  color: #1f2933;
+  line-height: 1.6;
+}
+
+/* ================= NAVBAR ================= */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 18px 60px;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.logo {
+  font-size: 22px;
+  font-weight: 700;
+  color: #10b981;
+}
+
+.logo span {
+  color: #111827;
+}
+
+/* ================= BUTTONS ================= */
+.btn {
+  padding: 10px 22px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  display: inline-block;
+}
+
+.btn-primary {
+  background-color: #10b981;
+  color: #ffffff;
+  box-shadow: 0 6px 15px rgba(16, 185, 129, 0.3);
+}
+
+.btn-primary:hover {
+  background-color: #059669;
+}
+
+.btn-outline {
+  border: 2px solid #10b981;
+  color: #10b981;
+  background: transparent;
+}
+
+.btn-outline:hover {
+  background-color: #10b981;
+  color: #ffffff;
+}
+
+/* ================= HERO ================= */
+.hero {
+  padding: 120px 20px;
+  text-align: center;
+}
+
+.hero-content {
+  max-width: 800px;
+  margin: auto;
+}
+
+.badge {
+  display: inline-block;
+  padding: 6px 14px;
+  background-color: #ecfdf5;
+  color: #10b981;
+  border-radius: 20px;
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+.hero h1 {
+  font-size: 52px;
+  margin-bottom: 20px;
+  line-height: 1.2;
+}
+
+.hero h1 span {
+  color: #10b981;
+}
+
+.hero p {
+  font-size: 18px;
+  color: #4b5563;
+  margin-bottom: 30px;
+}
+
+.hero-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+/* ================= AWARENESS ================= */
+.awareness {
+  padding: 80px 40px;
+  background-color: #f9fafb;
+  text-align: center;
+}
+
+.awareness h2 {
+  font-size: 32px;
+  margin-bottom: 40px;
+}
+
+.cards {
+  display: flex;
+  gap: 25px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.card {
+  background-color: #ffffff;
+  padding: 30px;
+  width: 280px;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+}
+
+.card h3 {
+  color: #10b981;
+  margin-bottom: 15px;
+}
+
+/* ================= INDIA SECTION ================= */
+.india {
+  padding: 80px 40px;
+  text-align: center;
+}
+
+.india h2 {
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+.india p {
+  font-size: 18px;
+  color: #374151;
+  max-width: 700px;
+  margin: auto;
+}
+
+/* ================= ANNOUNCEMENTS ================= */
+.announcements {
+  padding: 80px 40px;
+  background-color: #ffffff;
+  text-align: center;
+}
+
+.announcements h2 {
+  font-size: 32px;
+  margin-bottom: 40px;
+}
+
+.announcement-list {
+  max-width: 800px;
+  margin: auto;
+}
+
+.announcement {
+  background-color: #ecfdf5;
+  border-left: 5px solid #10b981;
+  padding: 20px;
+  margin-bottom: 20px;
+  text-align: left;
+  border-radius: 8px;
+}
+
+.announcement h3 {
+  color: #065f46;
+  margin-bottom: 8px;
+}
+
+/* ================= FOOTER ================= */
+.footer {
+  padding: 20px;
+  text-align: center;
+  border-top: 1px solid #e5e7eb;
+  color: #6b7280;
+  font-size: 14px;
+}
+
+/* ================= FORMS ================= */
+.form-box {
+  max-width: 400px;
+  margin: auto;
+  background: #ffffff;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+  text-align: center;
+}
+
+.form-box input,
+.form-box textarea {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border-radius: 8px;
+  border: 1px solid #d1d5db;
+  font-size: 14px;
+}
+
+.form-box textarea {
+  resize: none;
+  height: 100px;
+}
+
+.form-box p {
+  margin-top: 10px;
+}
+
+/* ================= REPORT FORM PAGE ================= */
+.form-section {
+  padding: 80px 20px;
+  background-color: #f9fafb;
+  text-align: center;
+}
+
+.form-title {
+  font-size: 34px;
+  color: #10b981;
+  margin-bottom: 10px;
+}
+
+.form-subtitle {
+  font-size: 16px;
+  color: #4b5563;
+  max-width: 600px;
+  margin: 0 auto 30px;
+}
+
+.form-box label {
+  display: block;
+  text-align: left;
+  font-weight: 600;
+  margin: 15px 0 6px;
+  color: #374151;
+}
+
+.form-box input[type="file"] {
+  border: none;
+  padding: 0;
+}

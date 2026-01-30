@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>EcoTrack | Municipality Awareness</title>
+  <link rel="stylesheet" href="./css/style.css" />
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <header class="navbar">
+    <div class="logo">
+      🏛️ Eco<span>Track</span> Admin
+    </div>
+
+    <a href="index.html" class="btn btn-outline">
+      Home
+    </a>
+  </header>
+
+  <!-- ADMIN FORM -->
+  <section class="announcements">
+    <h2>Post Awareness Announcement</h2>
+
+    <form id="announcementForm" class="announcement">
+      <div style="margin-bottom: 15px;">
+        <label>Title</label><br />
+        <input
+          type="text"
+          id="title"
+          required
+          style="width: 100%; padding: 10px;"
+        />
+      </div>
+
+      <div style="margin-bottom: 15px;">
+        <label>Content</label><br />
+        <textarea
+          id="content"
+          rows="5"
+          required
+          style="width: 100%; padding: 10px;"
+        ></textarea>
+      </div>
+
+      <button type="submit" class="btn btn-primary">
+        Publish Announcement
+      </button>
+
+      <p id="result" style="margin-top: 15px;"></p>
+    </form>
+  </section>
+
+  <script src="js/adminAnnouncements.js"></script>
+
+</body>
+</html>
