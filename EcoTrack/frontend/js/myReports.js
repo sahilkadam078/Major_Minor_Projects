@@ -6,12 +6,12 @@ async function loadMyReports() {
       credentials: "include"
     });
 
-    const reports = await response.json();
-
     if (!response.ok) {
       container.innerHTML = "<p>Failed to load reports</p>";
       return;
     }
+
+    const reports = await response.json();
 
     if (reports.length === 0) {
       container.innerHTML = "<p>No reports submitted yet.</p>";
@@ -28,7 +28,13 @@ async function loadMyReports() {
         <h3>${r.title}</h3>
         <p><strong>Location:</strong> ${r.location}</p>
         <p><strong>Description:</strong> ${r.description}</p>
-        <p><strong>Status:</strong> ${r.status}</p>
+
+        <p>
+          <strong>Status:</strong>
+          <span class="badge ${r.status}">
+            ${r.status.toUpperCase()}
+          </span>
+        </p>
       `;
 
       container.appendChild(card);

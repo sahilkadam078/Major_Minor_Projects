@@ -1,26 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <title>EcoTrack | My Reports</title>
   <link rel="stylesheet" href="./css/style.css" />
 </head>
+
 <body>
 
   <header class="navbar">
     <div class="logo">🌱 Eco<span>Track</span></div>
-    <a href="report.html" class="btn btn-outline">New Report</a>
-  </header>
 
-  <section class="announcements">
-    <h2>My Submitted Reports</h2>
+    <nav class="nav-links">
+      <a href="dashboard.html">Dashboard</a>
+      <a href="my-reports.html" class="active">My Reports</a>
+      <a href="report.html">Report Issue</a>
+      <a href="#" id="logoutBtn" class="btn btn-outline">Logout</a>
+    </nav>
+    </header>
 
-    <!-- THIS ID IS IMPORTANT -->
-    <div id="reportsContainer" class="cards"></div>
-  </section>
+    <section class="announcements">
+      <h2>My Submitted Reports</h2>
 
-  <!-- THIS SCRIPT PATH IS IMPORTANT -->
-  <script src="./js/myReports.js"></script>
+      <!-- THIS ID IS IMPORTANT -->
+      <div id="reportsContainer" class="cards"></div>
+    </section>
+
+    <!-- THIS SCRIPT PATH IS IMPORTANT -->
+    <script src="./js/myReports.js"></script>
+    <script src="./js/logout.js"></script>
 
 </body>
+
 </html>

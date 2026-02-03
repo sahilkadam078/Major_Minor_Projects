@@ -2,48 +2,42 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8" />
+  <meta charset="UTF-8">
   <title>EcoTrack | Login</title>
-  <link rel="stylesheet" href="./css/style.css" />
+  <link rel="stylesheet" href="./css/style.css">
 </head>
 
 <body>
 
   <header class="navbar">
     <div class="logo">🌱 Eco<span>Track</span></div>
+
+    <nav class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="index.html#announcements">Announcements</a>
+      <a href="index.html#awareness">Awareness</a>
+    </nav>
   </header>
 
-  <section class="announcements">
-    <h2>Citizen Login</h2>
+  <div class="auth-page">
+    <form class="form-box" id="loginForm">
+      <h2 style="color:#10b981">Citizen Login</h2><br>
 
-    <form id="loginForm" class="form-box">
-      <input
-        type="email"
-        id="email"
-        placeholder="Email"
-        required
-      />
+      <input type="email" id="email" placeholder="Email" required />
+      <input type="password" id="password" placeholder="Password" required />
 
-      <input
-        type="password"
-        id="password"
-        placeholder="Password"
-        required
-      />
+      <button class="btn btn-primary" type="submit">Login</button>
 
-      <button type="submit" class="btn btn-primary">
-        Login
-      </button>
+      <p>
+        Don’t have an account?
+        <a href="signup.html">Signup</a>
+      </p>
 
       <p id="result"></p>
     </form>
-  </section>
+  </div>
 
-  <!-- IMPORTANT -->
   <script src="js/login.js"></script>
-
 </body>
-
-
 
 </html>

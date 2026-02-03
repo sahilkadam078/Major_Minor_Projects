@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>EcoTrack | Citizen Dashboard</title>
+  <link rel="stylesheet" href="./css/style.css" />
+</head>
+
+<body>
+
+  <!-- ================= NAVBAR ================= -->
+  <header class="navbar">
+    <div class="logo">🌱 Eco<span>Track</span></div>
+
+    <nav class="nav-links">
+      <a href="dashboard.html" class="active">Dashboard</a>
+      <a href="my-reports.html">My Reports</a>
+      <a href="report.html">Report Issue</a>
+      <a href="#" id="logoutBtn" class="btn btn-outline">Logout</a>
+    </nav>
+  </header>
+
+  <!-- ================= DASHBOARD ================= -->
+  <section class="dashboard">
+
+  <h2>👋 Welcome, Citizen</h2>
+  <p>Track your waste complaints and contribute to a cleaner city.</p>
+
+  <!-- QUICK ACTIONS -->
+  <div class="dashboard-actions">
+    <a href="report.html" class="card-btn">📝 Report New Issue</a>
+    <a href="my-reports.html" class="card-btn">📂 View My Reports</a>
+    <a href="#announcements" class="card-btn">📢 Announcements</a>
+  </div>
+
+  <!-- SUMMARY -->
+  <div class="dashboard-section">
+    <h3>Your Report Summary</h3>
+
+    <div class="dashboard-summary">
+      <div class="card">
+        <h3>📊 Total Reports</h3>
+        <p id="totalReports">0</p>
+      </div>
+
+      <div class="card">
+        <h3>⏳ Pending</h3>
+        <p id="pendingReports">0</p>
+      </div>
+
+      <div class="card">
+        <h3>✅ Resolved</h3>
+        <p id="resolvedReports">0</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- AWARENESS -->
+  <div class="dashboard-section">
+    <h3>♻️ Waste Awareness</h3>
+    <div class="card">
+      Always segregate wet and dry waste before disposal.
+    </div>
+  </div>
+
+  <!-- ANNOUNCEMENTS -->
+  <div class="dashboard-section" id="announcements">
+    <h3>📢 Latest Announcements</h3>
+
+    <div class="announcement">
+      <h3>Plastic Ban Drive</h3>
+      <p>Single-use plastic is banned. Use eco-friendly alternatives.</p>
+    </div>
+
+    <div class="announcement">
+      <h3>Waste Segregation Notice</h3>
+      <p>Please separate wet and dry waste before disposal.</p>
+    </div>
+  </div>
+
+</section>
+
+  <!-- ================= SCRIPTS ================= -->
+  <script src="./js/protect.js"></script>
+  <script>
+    protectPage("citizen");
+  </script>
+
+  <script src="./js/logout.js"></script>
+  <script src="./js/myReports.js"></script>
+  <script src="./js/dashboardSummary.js"></script>
+
+</body>
+</html>

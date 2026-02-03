@@ -17,7 +17,11 @@ form.addEventListener("submit", async (e) => {
       body: JSON.stringify({ email, password })
     });
 
-    const data = await response.json();
+    let data = {};
+    try {
+      data = await response.json();
+    } catch { }
+
 
     if (!response.ok) {
       result.style.color = "red";
@@ -29,9 +33,12 @@ form.addEventListener("submit", async (e) => {
     result.innerText = "Login successful";
 
     // redirect after login
-    setTimeout(() => {
-      window.location.href = "report.html";
-    }, 800);
+    if (data.role === "admin") {
+      window.location.href = "admin-dashboard.html";
+    } else {
+      window.location.href = "dashboard.html";
+    }
+
 
   } catch (error) {
     result.style.color = "red";

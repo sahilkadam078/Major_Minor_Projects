@@ -12,6 +12,13 @@
 
   <header class="navbar">
     <div class="logo">🌱 Eco<span>Track</span></div>
+
+    <nav class="nav-links">
+      <a href="dashboard.html">Dashboard</a>
+      <a href="my-reports.html">My Reports</a>
+      <a href="report.html" class="active">Report Issue</a>
+      <a href="#" id="logoutBtn" class="btn btn-outline">Logout</a>
+    </nav>
   </header>
 
   <section class="form-section">
@@ -25,19 +32,19 @@
     <form id="reportForm" class="form-box" enctype="multipart/form-data">
 
       <label>Your Name</label>
-      <input type="text" placeholder="Enter your full name" required />
+      <input type="text" name="name" placeholder="Enter your full name" required />
 
       <label>Email Address</label>
-      <input type="email" placeholder="Enter your email" required />
+      <input type="email" name="email" placeholder="Enter your email" required />
 
       <label>📍 Location</label>
-      <input type="text" id="location" placeholder="e.g. Near Ahmednagar Bus Stand" required />
+      <input type="text" id="location" name="location" placeholder="e.g. Near Ahmednagar Bus Stand" required />
 
       <label>Issue Description</label>
-      <textarea id="description" placeholder="Describe the issue briefly..." required></textarea>
+      <textarea id="description" name="description" placeholder="Describe the issue briefly..." required></textarea>
 
       <label>Upload Photo (optional)</label>
-      <input type="file" id="image" />
+      <input type="file" id="image" name="image" />
 
       <button type="submit" class="btn btn-primary">
         Submit Report
@@ -49,6 +56,7 @@
   </section>
 
   <script src="js/report.js"></script>
+  <script src="./js/logout.js"></script>
 
 </body>
 

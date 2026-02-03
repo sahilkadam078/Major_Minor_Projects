@@ -19,24 +19,30 @@ form.addEventListener("submit", async (e) => {
   try {
     const response = await fetch("http://localhost:5000/reports", {
       method: "POST",
-      credentials: "include",   // IMPORTANT (session)
+      credentials: "include", // session cookie
       body: formData
     });
 
     const data = await response.json();
 
     if (!response.ok) {
+      result.style.color = "red";
       result.innerText = data.message || "Failed to submit report";
       return;
     }
 
+    // ✅ SUCCESS
     result.style.color = "green";
-    result.innerText = "Report submitted successfully!";
-    form.reset();
+    result.innerText = "Report submitted successfully! Redirecting...";
+
+    // ✅ REDIRECT TO MY REPORTS
+    setTimeout(() => {
+      window.location.href = "my-reports.html";
+    }, 1200);
 
   } catch (error) {
+    console.error(error);
     result.style.color = "red";
     result.innerText = "Server not reachable";
-    console.error(error);
   }
 });

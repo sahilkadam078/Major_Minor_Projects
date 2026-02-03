@@ -1,114 +1,184 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8" />
-    <title>EcoTrack | Smart Waste Management</title>
-    <link rel="stylesheet" href="./css/style.css" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>EcoTrack | Smart Waste Management Portal</title>
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet" />
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/style.css" />
 </head>
 
 <body>
 
-    <!-- ================= NAVBAR ================= -->
-    <header class="navbar">
-        <div class="logo">
-            🌱 Eco<span>Track</span>
-        </div>
+  <!-- ================= NAVBAR ================= -->
+  <header class="navbar">
+    <div class="logo">🌱 Eco<span>Track</span></div>
 
-        <a href="login.html" class="btn btn-outline">
-            Sign In
-        </a>
-    </header>
+    <nav class="nav-links">
+      <a href="index.html" class="active">Home</a>
+      <a href="#about">About</a>
+      <a href="#announcements">Announcements</a>
+      <a href="#awareness">Awareness</a>
+      <a href="login.html" class="btn btn-outline">Login</a>
+      <a href="signup.html" class="btn btn-primary">Signup</a>
+    </nav>
+  </header>
 
-    <!-- ================= HERO SECTION ================= -->
-    <section class="hero">
-        <div class="hero-content">
+  <!-- ================= HERO ================= -->
+  <section class="hero">
+    <div class="hero-content">
+      <span class="badge">Municipality Initiative</span>
 
-            <span class="badge">🌿 Smart Waste Management</span>
+      <h1>
+        Smart Waste Management for a <span>Cleaner Tomorrow</span>
+      </h1>
 
-            <h1>
-                Keep Your City <br />
-                <span>Clean & Green</span>
-            </h1>
+      <p>
+        EcoTrack is a digital initiative by the Municipality to promote cleanliness,
+        spread awareness, and enable citizens to report waste-related issues easily.
+      </p>
 
-            <p>
-                Join thousands of citizens making a difference.
-                Report waste issues, track cleanup progress, and help
-                build a sustainable future for our community.
-            </p>
+      <div class="hero-buttons">
+        <a href="login.html" class="btn btn-primary">Report a Waste Issue</a>
+        <a href="#about" class="btn btn-outline">Learn More</a>
+      </div>
+    </div>
+  </section>
 
-            <div class="hero-buttons">
-                <a href="login.html" class="btn btn-primary">
-                    Get Started →
-                </a>
-                <a href="#awareness" class="btn btn-outline">
-                    Learn More
-                </a>
-            </div>
+  <!-- ================= ABOUT ================= -->
+  <section class="india" id="about">
+    <h2>About EcoTrack</h2>
+    <p>
+      Rapid urbanization has increased the challenges of waste management in cities.
+      Overflowing bins, uncollected garbage, and improper segregation directly affect
+      public health and the environment.
+    </p>
+    <p style="margin-top:15px;">
+      EcoTrack aims to bridge the gap between citizens and the municipality by
+      providing a transparent, easy-to-use platform for reporting waste issues
+      and spreading awareness about responsible waste disposal.
+    </p>
+  </section>
 
-        </div>
-    </section>
+  <!-- ================= WHY IT MATTERS ================= -->
+  <section class="india">
+    <h2>Why Waste Management Matters</h2>
+    <p>
+      Poor waste management leads to air pollution, water contamination,
+      and the spread of diseases. It also affects the overall image and livability
+      of the city.
+    </p>
+    <p style="margin-top:15px;">
+      By actively participating in waste segregation and reporting issues,
+      citizens play a crucial role in building a healthy and sustainable city.
+    </p>
+  </section>
 
-    <!-- ================= AWARENESS SECTION ================= -->
-    <section id="awareness" class="awareness">
-        <h2>Why Waste Segregation Matters</h2>
+  <!-- ================= AWARENESS ================= -->
+  <section class="awareness" id="awareness">
+    <h2>Know Your Waste & Segregate Properly</h2>
+    <p style="margin-bottom:30px;">
+      Segregating waste at the source helps reduce landfill pressure and
+      improves recycling efficiency.
+    </p>
 
-        <div class="cards">
-            <div class="card">
-                <h3>♻️ Wet Waste</h3>
-                <p>
-                    Food waste, vegetable peels, and biodegradable waste.
-                    Can be composted to create natural fertilizer.
-                </p>
-            </div>
-
-            <div class="card">
-                <h3>📦 Dry Waste</h3>
-                <p>
-                    Plastic, paper, metal, and glass.
-                    Should be recycled to reduce landfill burden.
-                </p>
-            </div>
-
-            <div class="card">
-                <h3>☣️ Hazardous Waste</h3>
-                <p>
-                    Batteries, medical waste, chemicals.
-                    Needs special handling to avoid environmental harm.
-                </p>
-            </div>
-        </div>
-    </section>
-
-    <!-- ================= INDIA SITUATION ================= -->
-    <section class="india">
-        <h2>India’s Waste Challenge</h2>
+    <div class="cards">
+      <div class="card">
+        <h3>♻️ Wet Waste</h3>
         <p>
-            India generates over <strong>62 million tons</strong> of waste annually.
-            Only a small portion is properly processed.
-            Citizen participation is the key to a cleaner future.
+          Includes food waste, vegetable peels, fruit waste, and biodegradable items.
+          Wet waste can be composted to create natural fertilizer.
         </p>
-    </section>
+      </div>
 
-    <!-- ================= ANNOUNCEMENTS ================= -->
-    <section class="announcements">
-        <h2>Municipality Announcements</h2>
-
-        <div id="announcementList" class="announcement-list">
-            <p>Loading announcements...</p>
-        </div>
-    </section>
-
-
-    <!-- ================= FOOTER ================= -->
-    <footer class="footer">
+      <div class="card">
+        <h3>🧴 Dry Waste</h3>
         <p>
-            © 2026 EcoTrack | Municipality Smart Waste Initiative
+          Includes plastic, paper, cardboard, glass, and metal.
+          These materials should be kept clean and dry for recycling.
         </p>
-    </footer>
+      </div>
 
-    <script src="js/announcements.js"></script>
+      <div class="card">
+        <h3>☣️ Hazardous Waste</h3>
+        <p>
+          Includes batteries, sanitary waste, e-waste, chemicals, and medical waste.
+          This waste requires special handling and safe disposal methods.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= HOW ECOTRACK WORKS ================= -->
+  <section class="india">
+    <h2>How EcoTrack Works</h2>
+    <p>
+      EcoTrack allows citizens to report waste-related issues such as uncollected
+      garbage, overflowing bins, and illegal dumping by simply logging in.
+    </p>
+    <p style="margin-top:15px;">
+      Each report includes a description, location, and optional image. Municipal
+      authorities can view reports, update status, and take timely action.
+    </p>
+  </section>
+
+  <!-- ================= ANNOUNCEMENTS ================= -->
+  <section class="announcements" id="announcements">
+    <h2>Municipality Announcements</h2>
+
+    <div class="announcement-list">
+      <div class="announcement">
+        <h3>Door-to-Door Waste Collection Drive</h3>
+        <p>
+          Municipal teams will conduct door-to-door waste collection from Monday.
+          Citizens are requested to keep segregated waste ready.
+        </p>
+      </div>
+
+      <div class="announcement">
+        <h3>Plastic Ban Awareness Campaign</h3>
+        <p>
+          A city-wide awareness rally will be conducted to promote alternatives
+          to single-use plastic.
+        </p>
+      </div>
+
+      <div class="announcement">
+        <h3>Public Cleanliness Drive</h3>
+        <p>
+          Volunteers and municipal workers will participate in a cleanliness drive
+          this weekend. Citizens are encouraged to join.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= CITIZEN RESPONSIBILITY ================= -->
+  <section class="india">
+    <h2>Citizen Responsibility</h2>
+    <p>
+      Clean cities are built through collective effort. Every citizen is encouraged
+      to follow waste segregation rules, avoid littering, and report issues responsibly.
+    </p>
+    <p style="margin-top:15px;">
+      Together, we can ensure a cleaner, healthier environment for future generations.
+    </p>
+  </section>
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="footer">
+    <p>
+      © 2026 EcoTrack | Smart Waste Management Portal<br />
+      Developed for Municipal Digital Governance
+    </p>
+  </footer>
+
+  <!-- ================= AUTH CHECK ================= -->
+  <script src="js/auth-check.js"></script>
 
 </body>
-
 </html>

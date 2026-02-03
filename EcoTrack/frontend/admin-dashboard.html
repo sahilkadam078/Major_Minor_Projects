@@ -1,22 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <title>EcoTrack | Admin Dashboard</title>
   <link rel="stylesheet" href="./css/style.css" />
 </head>
+
 <body>
 
-  <header class="navbar">
-    <div class="logo">🏛️ Eco<span>Track</span> Admin</div>
-  </header>
+  <!-- Navbar -->
+  <nav class="navbar">
+    <h1>EcoTrack – Admin</h1>
+    <div>
+      <a href="index.html" class="btn">Home</a>
+      <a href="logout.html" class="btn btn-outline">Logout</a>
+    </div>
+  </nav>
 
-  <section class="announcements">
-    <h2>All Waste Reports</h2>
+  <!-- Admin Section -->
+  <section class="dashboard">
+    <h2>Municipality Dashboard</h2>
+    <p>Manage all reported waste issues.</p>
 
-    <div id="adminReports" class="cards"></div>
+    <div class="admin-actions">
+      <button class="badge pending" onclick="filterReports('pending')">Pending</button>
+      <button class="badge progress" onclick="filterReports('in-progress')">In Progress</button>
+      <button class="badge resolved" onclick="filterReports('resolved')">Resolved</button>
+    </div>
+
+
+    <!-- Reports -->
+    <div id="adminReports" class="reports-container">
+      <p>Loading reports...</p>
+    </div>
   </section>
 
+  <script src="./js/protect.js"></script>
+  <script>
+    protectPage("admin");
+  </script>
   <script src="./js/adminDashboard.js"></script>
+
 </body>
+
 </html>
