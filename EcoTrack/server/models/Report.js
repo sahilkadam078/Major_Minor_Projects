@@ -13,8 +13,8 @@ const reportSchema = new mongoose.Schema(
       required: true,
     },
 
-    image: {
-      type: String, // Cloudinary URL
+    imagePublicId: {
+      type: String
     },
 
     location: {
